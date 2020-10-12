@@ -1,42 +1,30 @@
-package com.EmployeeData;
+package com.Percentage;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        float tax=0;
-        String name;
-        int age,as;
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter Name,age and AnnualSalary Of Employee");
-//        name=sc.nextLine();
-        age=sc.nextInt();
-        as=sc.nextInt();
-        name=sc.nextLine();
-        if(as>=500000)
-        {
-            System.out.println("your Tax is 20%");
+        int a=0,b=0,c=0,d=0,e=0,num=(a+b+c+d+e);
+        float avg=(num/500*100);
+        System.out.println("enter a,,b,c,d,e");
+
+        avg = sc.nextFloat();
+        if((avg>85)&&(avg<100)) {
+            System.out.println("your grade is 'A' and Per is above " +avg);
         }
-        else if(as>=400000)
+        else if((avg>65)&&(avg<35))
         {
-            System.out.println("your Tax is 15%");
+            System.out.println("your grade is 'B' and Per is above " +avg);
         }
-        else if(as>=300000)
+        else if((avg>35)&&(avg<65))
         {
-            System.out.println("your Tax is 10%");
-        }
-        else if(as>=200000) {
-            System.out.println("your Tax is 5%");
+            System.out.println("your grade is 'c' and Per is above " +avg);
         }
         else
         {
-            System.out.println("for you NO Tax is there");
+            System.out.println("you are failed try again in next exam,good luck");
         }
-//        EmployeeData e1 = new EmployeeData();
-//        e1.name = "vishnu";
-//        e1.age = 20;
-//        e1.as = 200000;
-//        e1.display();
 
 
 	// write your code here
